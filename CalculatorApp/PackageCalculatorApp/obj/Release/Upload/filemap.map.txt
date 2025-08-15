@@ -1,0 +1,17 @@
+﻿[ResourceMetadata]
+"ResourceDimensions"		"scale-200"
+"ResourceDimensions"		"language-en-us"
+
+[Files]
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\Upload\filemap.pri"			"resources.pri"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\Images\Wide310x150Logo.scale-200.png"			"Images\Wide310x150Logo.scale-200.png"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\Images\StoreLogo.png"			"Images\StoreLogo.png"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\Images\Square44x44Logo.targetsize-24_altform-unplated.png"			"Images\Square44x44Logo.targetsize-24_altform-unplated.png"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\Images\Square44x44Logo.scale-200.png"			"Images\Square44x44Logo.scale-200.png"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\Images\Square150x150Logo.scale-200.png"			"Images\Square150x150Logo.scale-200.png"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\Images\SplashScreen.scale-200.png"			"Images\SplashScreen.scale-200.png"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\Images\LockScreenLogo.scale-200.png"			"Images\LockScreenLogo.scale-200.png"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\CalculatorApp\StatsLibrary.dll"			"CalculatorApp\StatsLibrary.dll"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\CalculatorApp\CalculatorApp.exe.config"			"CalculatorApp\CalculatorApp.exe.config"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\CalculatorApp\CalculatorApp.exe"			"CalculatorApp\CalculatorApp.exe"
+"C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\obj\Release\PackageUploadLayout\CalculatorApp\AdvancedMath.dll"			"CalculatorApp\AdvancedMath.dll"

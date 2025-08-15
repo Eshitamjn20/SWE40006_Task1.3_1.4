@@ -1,0 +1,3 @@
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\AdvancedMath.dll
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\CalculatorApp.exe
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\StatsLibrary.dll

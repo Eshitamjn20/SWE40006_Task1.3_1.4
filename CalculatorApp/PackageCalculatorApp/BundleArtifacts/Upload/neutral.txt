@@ -1,0 +1,2 @@
+MainPackage=C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\bin\AnyCPU\Release\Upload\PackageCalculatorApp_1.0.6.0_AnyCPU.msix
+SymbolPackage=C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\bin\AnyCPU\Release\Upload\PackageCalculatorApp_1.0.6.0\PackageCalculatorApp_1.0.6.0_AnyCPU.appxsym

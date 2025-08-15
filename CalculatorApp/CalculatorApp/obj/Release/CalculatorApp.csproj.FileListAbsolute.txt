@@ -1,0 +1,15 @@
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\CalculatorApp.exe.config
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\CalculatorApp.exe
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\CalculatorApp.pdb
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\AdvancedMath.dll
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\StatsLibrary.dll
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\AdvancedMath.pdb
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\StatsLibrary.pdb
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\obj\Release\CalculatorApp.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\obj\Release\CalculatorApp.Properties.Resources.resources
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\obj\Release\CalculatorApp.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\obj\Release\CalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\obj\Release\Calculat.C0507999.Up2Date
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\obj\Release\CalculatorApp.exe
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\obj\Release\CalculatorApp.pdb
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\obj\Release\CalculatorApp.exe.config

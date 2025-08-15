@@ -1,0 +1,6 @@
+MainPackage=C:\Users\DELL\source\repos\CalculatorApp\CaluclatorAppPackage\bin\AnyCPU\Release\CaluclatorAppPackage_1.0.5.0_AnyCPU.msix
+SymbolPackage=C:\Users\DELL\source\repos\CalculatorApp\CaluclatorAppPackage\obj\Release\Symbols\CaluclatorAppPackage_1.0.5.0_AnyCPU.appxsym
+ResourcePack=C:\Users\DELL\source\repos\CalculatorApp\CaluclatorAppPackage\bin\AnyCPU\Release\CaluclatorAppPackage_1.0.5.0_scale-100.msix
+ResourcePack=C:\Users\DELL\source\repos\CalculatorApp\CaluclatorAppPackage\bin\AnyCPU\Release\CaluclatorAppPackage_1.0.5.0_scale-125.msix
+ResourcePack=C:\Users\DELL\source\repos\CalculatorApp\CaluclatorAppPackage\bin\AnyCPU\Release\CaluclatorAppPackage_1.0.5.0_scale-150.msix
+ResourcePack=C:\Users\DELL\source\repos\CalculatorApp\CaluclatorAppPackage\bin\AnyCPU\Release\CaluclatorAppPackage_1.0.5.0_scale-400.msix

@@ -1,0 +1,161 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CaluclatorAppPackage\\CaluclatorAppPackage.wapproj": {}
+  },
+  "projects": {
+    "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\AdvancedMath\\AdvancedMath.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\AdvancedMath\\AdvancedMath.csproj",
+        "projectName": "AdvancedMath",
+        "projectPath": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\AdvancedMath\\AdvancedMath.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj",
+        "projectName": "CalculatorApp",
+        "projectPath": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\AdvancedMath\\AdvancedMath.csproj": {
+                "projectPath": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\AdvancedMath\\AdvancedMath.csproj"
+              },
+              "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\StatsLibrary\\StatsLibrary.csproj": {
+                "projectPath": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\StatsLibrary\\StatsLibrary.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CaluclatorAppPackage\\CaluclatorAppPackage.wapproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CaluclatorAppPackage\\CaluclatorAppPackage.wapproj",
+        "projectName": "CaluclatorAppPackage",
+        "projectPath": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CaluclatorAppPackage\\CaluclatorAppPackage.wapproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CaluclatorAppPackage\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net451"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17763": {
+            "targetAlias": "net451",
+            "projectReferences": {
+              "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj": {
+                "projectPath": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1702"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "uap10.0.17763": {
+          "targetAlias": "net451",
+          "dependencies": {
+            "Microsoft.Windows.SDK.BuildTools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.26100.1742, )"
+            }
+          },
+          "imports": [
+            "netcoreapp3.1",
+            "netcoreapp3.0",
+            "netcoreapp2.0",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481",
+            "net10.0-windows10.0.26100",
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\StatsLibrary\\StatsLibrary.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\StatsLibrary\\StatsLibrary.csproj",
+        "projectName": "StatsLibrary",
+        "projectPath": "C:\\Users\\DELL\\source\\repos\\CalculatorApp\\StatsLibrary\\StatsLibrary.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

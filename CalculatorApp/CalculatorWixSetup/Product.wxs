@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+	<Product Id="*"
+			 Name="CalculatorWixSetup"
+			 Language="1033"
+			 Version="1.0.0.0"
+			 Manufacturer="Eshita"
+			 UpgradeCode="9448d482-40f9-4147-ace0-7696e313b34e">
+
+		<Package InstallerVersion="500" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="CalculatorWixSetup" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="CalculatorApp" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+
+			<!-- CalculatorApp.exe -->
+			<Component Id="CalcExe" Guid="B0A43C93-F6B6-4DD0-8747-CF7A4D63EA27">
+				<File Id="CalculatorAppExe"
+					  Name="CalculatorApp.exe"
+					  Source="$(var.CalculatorApp.TargetDir)CalculatorApp.exe" />
+			</Component>
+
+			<!-- AdvancedMath.dll -->
+			<Component Id="AdvMathDll" Guid="433A9FE2-1CBC-46BE-ADA1-50D812A8D9F3">
+				<File Id="AdvancedMathDll"
+					  Name="AdvancedMath.dll"
+					  Source="$(var.CalculatorApp.TargetDir)AdvancedMath.dll" />
+			</Component>
+
+			<!-- StatsLibrary.dll -->
+			<Component Id="StatsLibDll" Guid="E1FB199B-55FF-43CA-92BE-4B71AF330D43">
+				<File Id="StatsLibraryDll"
+					  Name="StatsLibrary.dll"
+					  Source="$(var.CalculatorApp.TargetDir)StatsLibrary.dll" />
+			</Component>
+
+		</ComponentGroup>
+	</Fragment>
+
+</Wix>

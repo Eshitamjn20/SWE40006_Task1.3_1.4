@@ -1,0 +1,6 @@
+C:\Users\DELL\source\repos\CalculatorApp\AdvancedMath\bin\Release\AdvancedMath.dll
+C:\Users\DELL\source\repos\CalculatorApp\AdvancedMath\bin\Release\AdvancedMath.pdb
+C:\Users\DELL\source\repos\CalculatorApp\AdvancedMath\obj\Release\AdvancedMath.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\CalculatorApp\AdvancedMath\obj\Release\AdvancedMath.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\CalculatorApp\AdvancedMath\obj\Release\AdvancedMath.dll
+C:\Users\DELL\source\repos\CalculatorApp\AdvancedMath\obj\Release\AdvancedMath.pdb

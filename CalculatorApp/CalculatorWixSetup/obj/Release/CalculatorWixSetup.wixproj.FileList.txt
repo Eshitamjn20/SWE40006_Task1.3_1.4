@@ -1,0 +1,6 @@
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorWixSetup\bin\Release\CalculatorWixSetup.msi
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorWixSetup\bin\Release\CalculatorWixSetup.wixpdb
+obj\Release\Product.wixobj
+obj\Release\CalculatorWixSetup.wixproj.BindContentsFileListnull.txt
+obj\Release\CalculatorWixSetup.wixproj.BindOutputsFileListnull.txt
+obj\Release\CalculatorWixSetup.wixproj.BindBuiltOutputsFileListnull.txt

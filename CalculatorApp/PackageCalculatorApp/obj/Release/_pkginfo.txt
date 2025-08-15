@@ -1,0 +1,1 @@
+C:\Users\DELL\source\repos\CalculatorApp\PackageCalculatorApp\AppPackages\PackageCalculatorApp_1.0.6.0_Test\PackageCalculatorApp_1.0.6.0_AnyCPU.msixbundle

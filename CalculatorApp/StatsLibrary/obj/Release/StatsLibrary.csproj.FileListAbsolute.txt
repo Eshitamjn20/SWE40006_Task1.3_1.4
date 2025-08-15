@@ -1,0 +1,6 @@
+C:\Users\DELL\source\repos\CalculatorApp\StatsLibrary\bin\Release\StatsLibrary.dll
+C:\Users\DELL\source\repos\CalculatorApp\StatsLibrary\bin\Release\StatsLibrary.pdb
+C:\Users\DELL\source\repos\CalculatorApp\StatsLibrary\obj\Release\StatsLibrary.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\CalculatorApp\StatsLibrary\obj\Release\StatsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\CalculatorApp\StatsLibrary\obj\Release\StatsLibrary.dll
+C:\Users\DELL\source\repos\CalculatorApp\StatsLibrary\obj\Release\StatsLibrary.pdb

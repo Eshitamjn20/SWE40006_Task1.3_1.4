@@ -1,0 +1,15 @@
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorAppPackage\Images\SplashScreen.scale-200.png
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorAppPackage\Images\LockScreenLogo.scale-200.png
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorAppPackage\Images\Square150x150Logo.scale-200.png
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorAppPackage\Images\Square44x44Logo.scale-200.png
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorAppPackage\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorAppPackage\Images\StoreLogo.png
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorAppPackage\Images\Wide310x150Logo.scale-200.png
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorAppPackage\bin\AnyCPU\Release\resources.pri
+C:\Users\DELL\source\repos\CalculatorApp\AdvancedMath\bin\Release\AdvancedMath.dll
+C:\Users\DELL\source\repos\CalculatorApp\StatsLibrary\bin\Release\StatsLibrary.dll
+C:\Users\DELL\source\repos\CalculatorApp\AdvancedMath\bin\Release\AdvancedMath.pdb
+C:\Users\DELL\source\repos\CalculatorApp\StatsLibrary\bin\Release\StatsLibrary.pdb
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\CalculatorApp.exe
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\CalculatorApp.exe.config
+C:\Users\DELL\source\repos\CalculatorApp\CalculatorApp\bin\Release\CalculatorApp.pdb
