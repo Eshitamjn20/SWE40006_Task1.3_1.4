@@ -59,6 +59,44 @@ CalculatorApp.sln
     ├── Package.appxmanifest
     └── Package.StoreAssociation.xml    # (present if store-associated)
 ```
+# ▶️ How to Build and Run
+
+## 🔹 Task 1.3 – DLL-based Calculator with MSI & MSIX
+
+### 1) Build the Calculator with DLLs
+1. Open the solution in **Visual Studio 2022**.  
+2. Right-click **CalculatorApp → Set as Startup Project**.  
+3. Select **Release** configuration.  
+4. Build → **Build Solution** (`Ctrl+Shift+B`).  
+5. Confirm these files exist in `CalculatorApp/bin/Release/`:
+   - `CalculatorApp.exe`
+   - `AdvancedMath.dll`
+   - `StatsLibrary.dll`
+
+Run `CalculatorApp.exe` and verify:
+- **Scientific ops:** powers, logs, trig, factorials.  
+- **Statistical ops:** mean, median, standard deviation.
+
+---
+
+### 2) Package as MSI (WiX)
+1. Right-click **CalculatorWixSetup → Build**.  
+2. Go to `CalculatorWixSetup/bin/Release/` and run `CalculatorWixSetup.msi`.  
+3. Complete the wizard (defaults to `C:\Program Files (x86)\MathMate Calculator`).  
+4. Launch from **Start Menu** (search *MathMate* or *Calculator*).
+
+**Notes:**  
+- In `Product.wxs`, each `<Component>` (EXE + both DLLs) must have a unique **GUID**.  
+- Generate GUIDs: **Tools → Create GUID**. No duplicates.  
+- Use `<MediaTemplate EmbedCab="yes" />` so DLLs and EXE are bundled in the MSI.
+
+---
+
+### 3) Package as MSIX (UWP Sideloading)
+1. Right-click **AppCalculatorPackage → Publish → Create App Packages**.  
+2. Select **Sideloading**.  
+3. After packaging, locate the output folder (e.g.):  AppCalculatorPackage/AppPackages/AppCalculatorPackage_1.0.0.0_Test/  by right click AppCalculatorPackage in Solution explorer -> Open in File explorer -> AppPackages -> AppCalculatorPackage_1.0.0.0_Test
+
 Inside: `.msixbundle` + `.cer` certificate.
 
 **Install certificate:**
