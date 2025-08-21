@@ -185,7 +185,7 @@ And here’s the **How to Build & Run** with the **correct project names**:
 - Store‑associated package created and **passed App Certification Kit**.  
 - **Published** on the Microsoft Store.
 
-**MathMate on Store:** ([add link here if public](https://apps.microsoft.com/detail/9NMF37GP3W15?hl=en-us&gl=AU&ocid=pdpshare)
+**MathMate on Store:** ([Math Mate Link ](https://apps.microsoft.com/detail/9NMF37GP3W15?hl=en-us&gl=AU&ocid=pdpshare)
 
 ---
 
