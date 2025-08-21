@@ -25,8 +25,6 @@ Before starting, ensure the following environment is configured:
 
 ---
 
-## 📂 Repository Structure  
-
 ## 📂 Repository Structure
 
 The solution contains five projects: the main calculator, two DLL libraries, a WiX MSI setup, and a UWP/MSIX packaging project.
@@ -61,142 +59,80 @@ CalculatorApp.sln
     ├── Package.appxmanifest
     └── Package.StoreAssociation.xml    # (present if store-associated)
 ```
-## ▶️ How to Build and Run
+Inside: `.msixbundle` + `.cer` certificate.
 
+**Install certificate:**
+- Double-click `.cer` → *Install Certificate*.  
+- Choose **Local Machine** → place in **Trusted Root Certification Authorities**.
 
-And here’s the **How to Build & Run** with the **correct project names**:
-
-
-## ▶️ How to Build and Run
-
-### 🔹 Task 1.3 – DLL-based Calculator with MSI & MSIX
-
-#### 1) Build the Calculator with DLLs
-1. Open the solution in **Visual Studio 2022**.
-2. Right‑click **`CalculatorApp`** → **Set as Startup Project**.
-3. Select **Release** configuration.
-4. **Build → Build Solution** (`Ctrl+Shift+B`).
-5. Confirm these files in `CalculatorApp/bin/Release/`:
-   - `CalculatorApp.exe`
-   - `AdvancedMath.dll`
-   - `StatsLibrary.dll`
-6. Run `CalculatorApp.exe` and verify:
-   - Scientific operations (powers, logs, trig)
-   - Statistical ops (mean, median, stdev)
+**Install package:**
+- Double-click `.msixbundle` → App Installer → *Install*.  
+- Launch from **Start Menu** (search *MathMate*).
 
 ---
 
-#### 2) Create & Install the MSI (WiX)
-1. Right‑click **`CalculatorWixSetup`** → **Build**.
-2. Open `CalculatorWixSetup/bin/Release/` → run **`CalculatorWixSetup.msi`**.
-3. Finish the wizard (defaults to **`C:\Program Files (x86)\MathMate Calculator`**).
-4. Launch from **Start Menu** (search **MathMate**/**Calculator**).
+### 🧩 DLL Components (Overview)
+- **AdvancedMath.dll** – powers, logs, trig, factorials (validates inputs like factorial on non-negative integers).  
+- **StatsLibrary.dll** – mean, median, stdev (safe handling of empty inputs).  
 
-**Notes**
-- In `Product.wxs`, each `<Component>` (exe + both DLLs) must have a **unique GUID**.
-- Generate via **Tools → Create GUID** (no duplicates).
+Both DLLs are compiled automatically into the output folder during **Build Solution**.  
+No manual linking is required — cloning the repo and building will recreate them.
 
 ---
 
-#### 3) Create & Install the MSIX (UWP Sideloading)
-1. Right‑click **`AppCalculatorPackage`** → **Publish → Create App Packages**.
-2. Choose **Sideloading**.
-3. After packaging, open the generated folder (similar to):AppCalculatorPackage\AppPackages\AppCalculatorPackage_1.0.0.0_Test\
+## 🔹 Task 1.4 – Microsoft Store Publication
 
-4. You’ll see a **`.msixbundle`** and a **`.cer`** (or `.pfx`) certificate.
+### 1) Associate Project with Microsoft Store
+- Reserve app name **MathMate** in [Partner Center](https://partner.microsoft.com/).  
+- In Visual Studio: right-click **AppCalculatorPackage → Publish → Associate App with Store**.  
+- Select the reserved app → links project with store entry.
 
-4. **Install the certificate**
-- Double‑click the **`.cer`** → **Install Certificate**.
-- **Local Machine** → **Trusted Root Certification Authorities**.
+### 2) Create Store-ready Package
+- Right-click **AppCalculatorPackage → Publish → Create App Packages**.  
+- Choose **Microsoft Store distribution**.  
+- Ensure *Identity / Version / Publisher* match store association.  
+- Visual Studio generates `.msixupload` for submission.
 
-5. **Install the package**
-- Double‑click the **`.msixbundle`** → **App Installer** → **Install**.
+### 3) Validate with Windows App Certification Kit
+- After build, run **App Certification Kit**.  
+- Fix issues like placeholder logos:  
+- Open **Package.appxmanifest → Visual Assets**.  
+- Replace defaults with branded icons (e.g., 1024×1024 MathMate logo).  
+- Rebuild and re-validate.
 
-6. Launch from **Start Menu** (search **AppCalculatorPackage / MathMate**).
-
----
-
-### 🔹 Task 1.4 – Microsoft Store Publication
-
-#### 1) Associate Project with Microsoft Store
-1. Reserve app name **MathMate** in **Partner Center**.  
-2. In Visual Studio: right‑click **`CalculatorPackage`** → **Publish → Associate App with Store**.  
-3. Select the reserved app to link the project with the store entry.
-
----
-
-#### 2) Create Store‑ready Package
-1. Right‑click **`CalculatorPackage`** → **Publish → Create App Packages**.  
-2. Choose **Microsoft Store** distribution.  
-3. Ensure **Identity / Version / Publisher** match the store association.  
-4. Visual Studio generates a **`.msixupload`** for submission.
-
----
-
-#### 3) Validate with Windows App Certification Kit
-1. Run **App Certification Kit** after build (prompted automatically).  
-2. If errors (e.g., placeholder logos), fix and rebuild:
-- Open **`Package.appxmanifest`** → **Visual Assets** tab.  
-- Replace default logos with branded assets (e.g., 1024×1024 **MathMate** logo).  
-- Rebuild package and re‑run validation.
-
----
-
-#### 4) Submit to Microsoft Store
-1. Upload **`.msixupload`** and metadata (description, screenshots, keywords).  
-2. Complete **Age Rating** questionnaire.  
-3. Set **Pricing & Availability** (MathMate → **Free**, **Global**).  
-4. Submit for review.  
-5. After approval, **MathMate** is published to the Microsoft Store.
+### 4) Submit to Microsoft Store
+- Upload `.msixupload` and metadata (description, screenshots, keywords).  
+- Complete **Age Rating**.  
+- Set **Pricing & Availability** (MathMate → Free, Global).  
+- Submit for review.  
+- After approval → MathMate live on **Microsoft Store**.
 
 ---
 
 ## ❌ Common Issues & Fixes
-
-- **Unresolved types/namespaces**  
-*Cause:* DLLs referenced incorrectly (circular or missing references).  
-*Fix:* Remove wrong references; re‑add **AdvancedMath** and **StatsLibrary** to **CalculatorApp**.
-
-- **Shadowed variables in StatsLibrary (CS0136)**  
-*Cause:* Variable reuse in LINQ (e.g., Median).  
-*Fix:* Rename inner variables to resolve scope conflicts.
-
-- **Designer/API mismatch (CS0117)**  
-*Cause:* `TextBox.PlaceholderText` not available in .NET 4.7.2.  
-*Fix:* Use a focus event + default text to simulate placeholder.
-
-- **Duplicate GUIDs in WiX**  
-*Fix:* Generate a **unique GUID per `<Component>`** (Tools → Create GUID).
-
-- **Store submission validation errors**  
-*Cause:* Placeholder logos or missing assets.  
-*Fix:* Replace with branded icons; regenerate assets; rebuild and re‑validate.
+- **Unresolved namespaces:** wrong DLL refs → re-add AdvancedMath + StatsLibrary.  
+- **Shadowed variables:** fix LINQ scope conflicts in `StatsLibrary`.  
+- **Designer mismatch:** `PlaceholderText` not in .NET 4.7.2 → simulate with focus event.  
+- **Duplicate GUIDs in WiX:** regenerate per `<Component>`.  
+- **Store validation errors:** replace placeholder logos, rebuild.  
 
 ---
 
 ## ✅ Outcomes
+- **Task 1.3:** Calculator packaged as MSI (WiX) + MSIX (sideload). Verified DLL-based functions.  
+- **Task 1.4:** Rebranded as **MathMate**, Store-associated, passed validation, published on Microsoft Store.  
 
-**Task 1.3**
-- DLL‑based calculator packaged as **MSI (WiX)** and **MSIX (sideload)**.  
-- Verified advanced (scientific) and statistical functions.
-
-**Task 1.4**
-- Calculator rebranded as **MathMate**.  
-- Store‑associated package created and **passed App Certification Kit**.  
-- **Published** on the Microsoft Store.
-
-**MathMate on Store:** ([Math Mate Link ](https://apps.microsoft.com/detail/9NMF37GP3W15?hl=en-us&gl=AU&ocid=pdpshare)
+📌 [MathMate on Store](https://apps.microsoft.com/detail/9NMF37GP3W15?hl=en-us&gl=AU&ocid=pdpshare)
 
 ---
 
 ## 🔗 Useful Links
-- WiX Toolset v3.11.2 (Release): https://github.com/wixtoolset/wix3/releases/tag/wix3112rtm  
-- WiX v3 Extension (VS2022): https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2022Extension  
-- Microsoft Partner Center: https://partner.microsoft.com/
-- Math Mate: https://apps.microsoft.com/detail/9NMF37GP3W15?hl=en-us&gl=AU&ocid=pdpshare
+- [WiX Toolset v3.11.2](https://github.com/wixtoolset/wix3/releases/tag/wix3112rtm)  
+- [WiX Extension (VS2022)](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2022Extension)  
+- [Microsoft Partner Center](https://partner.microsoft.com/)  
 
 ---
 
-## 👩‍💻 Author
-**Eshita Mahajan (104748964)**  
+👩‍💻 **Author:**  
+Eshita Mahajan (104748964)  
 SWE40006 – Software Deployment and Evolution (Semester II, 2025)
